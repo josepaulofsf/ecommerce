@@ -1,0 +1,13 @@
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/EcommerceApplication.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/controller/CustomerController.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/controller/OrderController.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/model/Customer.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/model/Order.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/model/Product.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/repository/OrderRepository.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/repository/ProductRepository.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/service/OrderProcessingService.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/service/ShippingCalculator.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/speculative/AbstractGenericEntityProcessorFactory.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/speculative/IGenericProcessor.java
+/home/paulofarias7/Área de trabalho/psoft/ecommerce/src/main/java/com/ecommerce/speculative/SimpleOrderProcessor.java

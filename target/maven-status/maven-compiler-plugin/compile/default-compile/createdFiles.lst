@@ -1,0 +1,14 @@
+com/ecommerce/model/Customer.class
+com/ecommerce/model/Product.class
+com/ecommerce/model/Order.class
+com/ecommerce/speculative/IGenericProcessor.class
+com/ecommerce/repository/ProductRepository.class
+com/ecommerce/controller/CustomerController.class
+com/ecommerce/repository/OrderRepository.class
+com/ecommerce/speculative/SimpleOrderProcessor$1.class
+com/ecommerce/EcommerceApplication.class
+com/ecommerce/controller/OrderController.class
+com/ecommerce/speculative/AbstractGenericEntityProcessorFactory.class
+com/ecommerce/service/ShippingCalculator.class
+com/ecommerce/speculative/SimpleOrderProcessor.class
+com/ecommerce/service/OrderProcessingService.class

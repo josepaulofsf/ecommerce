@@ -15,7 +15,9 @@
     <name>ecommerce-refactoring</name>
     <description>Projeto educacional para refatoração de bad smells</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -34,6 +36,19 @@
     </dependencies>
     <build>
         <plugins>
+            <!-- Força o Maven a usar as configurações exatas abaixo, ignorando o Spring Boot -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                    <!-- O parâmetro abaixo anula a flag problemática -->
+                    <release combine.self="empty"></release>
+                </configuration>
+            </plugin>
+            
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
