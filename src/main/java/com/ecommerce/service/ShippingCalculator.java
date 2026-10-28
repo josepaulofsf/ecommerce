@@ -7,23 +7,18 @@ import org.springframework.stereotype.Service;
 public class ShippingCalculator {
 
     public double calculateShippingCost(Order order) {
+        if (order == null) {
+            return 0.0;
+        }
+
+        if (order.isEligibleForFreeShipping()) {
+            return 0.0;
+        }
+
         double baseCost = 10.0;
-        
-        String zipCode = order.getCustomer().getZipCode();
-        if (zipCode.startsWith("0") || zipCode.startsWith("1")) {
-            baseCost += 5.0;
-        } else if (zipCode.startsWith("2")) {
-            baseCost += 15.0;
-        } else {
-            baseCost += 25.0;
-        }
+        baseCost += order.getCustomerRegionSurcharge();
 
-        double totalOrderValue = order.getProduct().getPrice() * order.getQuantity();
-        if (totalOrderValue > 500.0) {
-            baseCost = 0.0;
-        }
-
-        if (order.getProduct().getName().toLowerCase().contains("heavy")) {
+        if (order.hasHeavyProduct()) {
             baseCost += 50.0;
         }
 
