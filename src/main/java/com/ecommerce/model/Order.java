@@ -33,4 +33,26 @@ public class Order {
     public void setQuantity(int quantity) { this.quantity = quantity; }
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
+
+    public double calculateTotalValue() {
+        if (this.product == null) {
+            return 0.0;
+        }
+        return this.product.getPrice() * this.quantity;
+    }
+
+    public boolean isEligibleForFreeShipping() {
+        return calculateTotalValue() > 500.0;
+    }
+
+    public boolean hasHeavyProduct() {
+        return this.product != null && this.product.isHeavy();
+    }
+
+    public double getCustomerRegionSurcharge() {
+        if (this.customer == null) {
+            return 25.0;
+        }
+        return this.customer.getRegionShippingSurcharge();
+    }
 }
