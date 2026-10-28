@@ -19,18 +19,4 @@ public class Customer {
     public void setZipCode(String zipCode) { this.zipCode = zipCode; }
     public boolean isActive() { return active; }
     public void setActive(boolean active) { this.active = active; }
-
-    public double getRegionShippingSurcharge() {
-        if (zipCode == null) {
-            return 25.0;
-        }
-        
-        if (zipCode.startsWith("0") || zipCode.startsWith("1")) {
-            return 5.0;
-        } else if (zipCode.startsWith("2")) {
-            return 15.0;
-        } else {
-            return 25.0;
-        }
-    }
 }

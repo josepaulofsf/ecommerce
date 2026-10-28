@@ -32,10 +32,6 @@ public class Product {
         return "{\"productId\":\"" + this.id + "\",\"title\":\"" + this.name + "\"}";
     }
 
-    public boolean isHeavy() {
-        return this.name != null && this.name.toLowerCase().contains("heavy");
-    }
-
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getName() { return name; }
